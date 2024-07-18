@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div id="login-box">
+        <div class="right">
+          <form action="/sign_up" method="POST">
+            <h1>Try Some!</h1>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="email" placeholder="Email Address" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <input type="password" name="password" placeholder="Password" />
+            <input type="password" name="password2" placeholder="Repeat password" />
+          
+            <input type="submit" name="signup_submit" value="Sign Up" id="submit"/>
+            <span class="tandc"> <br> Terms and Conditions</span>
+        </form>
+          
+        </div>
+        
+        <div class="left">
+          <form action="/read" method="get">
+            <button class="social-signin">Hiển thị thông tin trong database</button>
+        </form>
+        
+
+        <form action="/update_info" method="get">
+          <button class="social-signin">Sửa thông tin trong database</button>
+        </form>
+
+        <form action="/delete_user" method="get">
+          <button class="social-signin">Xóa thông tin trong database</button>
+      </form>
+        </div>
+</body>
+</html>
